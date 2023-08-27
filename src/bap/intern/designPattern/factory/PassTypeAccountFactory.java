@@ -1,8 +1,8 @@
-package bap.intern.designPattern.account.factory;
+package bap.intern.designPattern.factory;
 
-import bap.intern.designPattern.account.Account;
-import bap.intern.designPattern.account.LoanAccount;
-import bap.intern.designPattern.account.SavingAccount;
+import bap.intern.designPattern.baseClass.Account;
+import bap.intern.designPattern.baseClass.LoanAccount;
+import bap.intern.designPattern.baseClass.SavingAccount;
 
 public class PassTypeAccountFactory implements AccountFactory{
     public Account createAccount(String type, String accountNumber, double balance) {

@@ -1,7 +1,7 @@
 package bap.intern.designPattern.facade;
 
-import bap.intern.designPattern.Customer;
-import bap.intern.designPattern.BalanceChangeNotificationItem;
+import bap.intern.designPattern.baseClass.Customer;
+import bap.intern.designPattern.baseClass.BalanceChangeNotificationItem;
 import bap.intern.designPattern.notificationObserver.NotifierSubject;
 import bap.intern.designPattern.notificationObserver.Notifier;
 

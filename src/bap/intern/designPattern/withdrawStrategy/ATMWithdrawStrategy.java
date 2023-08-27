@@ -1,7 +1,7 @@
 package bap.intern.designPattern.withdrawStrategy;
 
-import bap.intern.designPattern.BalanceChangeNotificationItem;
-import bap.intern.designPattern.account.Account;
+import bap.intern.designPattern.baseClass.BalanceChangeNotificationItem;
+import bap.intern.designPattern.baseClass.Account;
 
 public class ATMWithdrawStrategy implements WithdrawStrategy {
     @Override

@@ -1,8 +1,8 @@
 package bap.intern.designPattern.facade;
 
-import bap.intern.designPattern.Bank;
-import bap.intern.designPattern.Customer;
-import bap.intern.designPattern.account.Account;
+import bap.intern.designPattern.baseClass.Bank;
+import bap.intern.designPattern.baseClass.Customer;
+import bap.intern.designPattern.baseClass.Account;
 
 import java.util.List;
 

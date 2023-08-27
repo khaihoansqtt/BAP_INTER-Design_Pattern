@@ -1,7 +1,7 @@
 package bap.intern.designPattern.notificationObserver;
 
-import bap.intern.designPattern.Customer;
-import bap.intern.designPattern.BalanceChangeNotificationItem;
+import bap.intern.designPattern.baseClass.Customer;
+import bap.intern.designPattern.baseClass.BalanceChangeNotificationItem;
 
 public class SMSNotifier implements  Notifier{
     @Override

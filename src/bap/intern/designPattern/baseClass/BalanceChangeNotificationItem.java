@@ -1,4 +1,4 @@
-package bap.intern.designPattern;
+package bap.intern.designPattern.baseClass;
 
 public class BalanceChangeNotificationItem {
     private String accountNumber;

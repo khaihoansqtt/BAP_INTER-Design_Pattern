@@ -1,6 +1,5 @@
-package bap.intern.designPattern;
+package bap.intern.designPattern.baseClass;
 
-import bap.intern.designPattern.account.Account;
 import bap.intern.designPattern.notificationObserver.Notifier;
 
 import java.util.ArrayList;

@@ -1,7 +1,7 @@
 package bap.intern.designPattern.notificationObserver;
 
-import bap.intern.designPattern.BalanceChangeNotificationItem;
-import bap.intern.designPattern.Customer;
+import bap.intern.designPattern.baseClass.BalanceChangeNotificationItem;
+import bap.intern.designPattern.baseClass.Customer;
 
 public class EmailNotifier implements  Notifier{
     @Override

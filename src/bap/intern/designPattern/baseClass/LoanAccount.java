@@ -1,4 +1,4 @@
-package bap.intern.designPattern.account;
+package bap.intern.designPattern.baseClass;
 
 public class LoanAccount extends Account {
     public LoanAccount(String accountNumber) {

@@ -1,4 +1,4 @@
-package bap.intern.designPattern;
+package bap.intern.designPattern.baseClass;
 
 import java.util.ArrayList;
 import java.util.List;
