@@ -1,6 +1,6 @@
 package bap.intern.designPattern.facade;
 
-import bap.intern.designPattern.baseClass.BalanceChangeNotificationItem;
+import bap.intern.designPattern.baseClass.NotificationItem;
 import bap.intern.designPattern.baseClass.Customer;
 import bap.intern.designPattern.baseClass.Account;
 import bap.intern.designPattern.notificationObserver.Notifier;
@@ -52,7 +52,7 @@ public class Controller {
     public void withDraw(String accountNumber, double money, String withdrawType) {
         Customer customer = customerService.getCustomerByAccountNumber(accountNumber);
         Account account = accountService.getAccount(customer, accountNumber);
-        BalanceChangeNotificationItem item = withdrawService.withdraw(account, money, withdrawType);
+        NotificationItem item = withdrawService.withdraw(account, money, withdrawType);
         if (item != null) {
             notifierService.notifyAll(customer, item);
         }

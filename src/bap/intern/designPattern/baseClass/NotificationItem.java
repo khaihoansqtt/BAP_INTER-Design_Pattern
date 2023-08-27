@@ -1,11 +1,11 @@
 package bap.intern.designPattern.baseClass;
 
-public class BalanceChangeNotificationItem {
+public class NotificationItem {
     private String accountNumber;
     private double prevBalance;
     private double curBalance;
 
-    public BalanceChangeNotificationItem(String accountNumber, double prevBalance, double curBalance) {
+    public NotificationItem(String accountNumber, double prevBalance, double curBalance) {
         this.accountNumber = accountNumber;
         this.prevBalance = prevBalance;
         this.curBalance = curBalance;

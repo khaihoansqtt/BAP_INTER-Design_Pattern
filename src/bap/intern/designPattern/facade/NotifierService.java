@@ -1,7 +1,7 @@
 package bap.intern.designPattern.facade;
 
 import bap.intern.designPattern.baseClass.Customer;
-import bap.intern.designPattern.baseClass.BalanceChangeNotificationItem;
+import bap.intern.designPattern.baseClass.NotificationItem;
 import bap.intern.designPattern.notificationObserver.NotifierSubject;
 import bap.intern.designPattern.notificationObserver.Notifier;
 
@@ -18,7 +18,7 @@ public class NotifierService implements NotifierSubject {
     }
 
     @Override
-    public void notifyAll(Customer customer, BalanceChangeNotificationItem item) {
+    public void notifyAll(Customer customer, NotificationItem item) {
         for (Notifier notifier : customer.getNotifiers()) {
             notifier.notifyTo(customer, item);
         }

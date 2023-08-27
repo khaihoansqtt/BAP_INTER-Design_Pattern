@@ -1,12 +1,12 @@
 package bap.intern.designPattern.withdrawStrategy;
 
-import bap.intern.designPattern.baseClass.BalanceChangeNotificationItem;
+import bap.intern.designPattern.baseClass.NotificationItem;
 import bap.intern.designPattern.baseClass.Account;
 // Ví dụ khi rút tiền tại ngân hàng thì tốn thêm hoa hồng 10%
 public class BankWithdrawStrategy implements WithdrawStrategy {
 
     @Override
-    public BalanceChangeNotificationItem withdraw(Account account, double amount) {
+    public NotificationItem withdraw(Account account, double amount) {
         double balance = account.getBalance();
         if (balance - amount >= 500) {
             double newBalance = balance - amount * 1.1;
@@ -21,7 +21,7 @@ public class BankWithdrawStrategy implements WithdrawStrategy {
             System.out.println("Phí rút tiền: " + amount * 0.1);
             System.out.println("Số dư hiện tại: " + newBalance);
 
-            BalanceChangeNotificationItem item = new BalanceChangeNotificationItem(account.getAccountNumber(),
+            NotificationItem item = new NotificationItem(account.getAccountNumber(),
                     balance, newBalance);
             return item;
         }

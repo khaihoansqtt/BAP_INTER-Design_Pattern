@@ -1,11 +1,11 @@
 package bap.intern.designPattern.notificationObserver;
 
 import bap.intern.designPattern.baseClass.Customer;
-import bap.intern.designPattern.baseClass.BalanceChangeNotificationItem;
+import bap.intern.designPattern.baseClass.NotificationItem;
 
 public class SMSNotifier implements  Notifier{
     @Override
-    public void notifyTo(Customer customer, BalanceChangeNotificationItem item) {
+    public void notifyTo(Customer customer, NotificationItem item) {
         System.out.println("\n---------THÔNG BÁO QUA SMS--------");
         System.out.println("Số điện thoại: " + customer.getPhoneNumber());
         System.out.println("Tên khách hàng: " + customer.getName());

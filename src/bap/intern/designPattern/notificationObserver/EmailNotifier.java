@@ -1,11 +1,11 @@
 package bap.intern.designPattern.notificationObserver;
 
-import bap.intern.designPattern.baseClass.BalanceChangeNotificationItem;
+import bap.intern.designPattern.baseClass.NotificationItem;
 import bap.intern.designPattern.baseClass.Customer;
 
 public class EmailNotifier implements  Notifier{
     @Override
-    public void notifyTo(Customer customer, BalanceChangeNotificationItem item) {
+    public void notifyTo(Customer customer, NotificationItem item) {
         System.out.println("\n---------THÔNG BÁO QUA EMAIL--------");
         System.out.println("Địa chỉ email: " + customer.getEmailAddress());
         System.out.println("Tên khách hàng: " + customer.getName());
